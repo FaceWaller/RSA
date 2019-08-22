@@ -28,8 +28,8 @@ static int D = 151;
 int getCoverModValue(int P, int E, int mod);
 
 int main(int argc, const char * argv[]) {
-    int P = 100;
-    int C = getCoverModValue(P, E, N);
+    int M = 100;   // 原文
+    int C = getCoverModValue(M, E, N);  // 密文
     printf("加密后：%d\n",C);
     
     int res = getCoverModValue(C, D, N);
