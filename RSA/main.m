@@ -17,19 +17,19 @@
 #include <stdio.h>
 
 static int P = 11;
-static int Q = 13;
-static int N = 209;
-static int M = 180;
-static int E = 31;
-static int D = 151;
-// 公钥（209,31）
-// 私钥 (209,151)
+static int Q = 17;
+static int N = 187;
+static int M = 160;
+static int E = 19;
+static int D = 59;
+// 公钥（187,19）
+// 私钥 (187,59)
 
 int getCoverModValue(int P, int E, int mod);
 
 int main(int argc, const char * argv[]) {
-    int M = 100;   // 原文
-    int C = getCoverModValue(M, E, N);  // 密文
+    int A = 100;   // 原文
+    int C = getCoverModValue(A, E, N);  // 密文
     printf("加密后：%d\n",C);
     
     int res = getCoverModValue(C, D, N);
